@@ -24,7 +24,7 @@ public class UsersApp {
                 User user = new User(parts[0], parts[1]);
                 users.add(user);
             } catch (IllegalArgumentException e) {
-                System.err.println(line + " - " + e.getMessage());
+                System.err.println(line + " " + e.getMessage());
             }
         }
 
