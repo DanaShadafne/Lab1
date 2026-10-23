@@ -40,14 +40,14 @@ public class UsersApp {
                         u1.getUsername().compareTo(u2.getUsername()));
 
         // Write valid users to the output file
-        try (PrintWriter writer = new PrintWriter("output.txt")) {
+        try (PrintWriter writer = new PrintWriter("out.txt")) {
             for (User user : users) {
                 writer.println(
                         user.getUsername() + " " + user.getPassword()
                 );
             }
         } catch (FileNotFoundException e) {
-            System.err.println("Could not create output.txt");
+            System.err.println("Could not create out.txt");
         }
     }
 }
