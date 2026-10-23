@@ -9,7 +9,7 @@ public class UsersApp {
     public static void main(String[] args) {
         ArrayList<User> users = new ArrayList<>();
 
-        // Read the input file and keep only valid users
+        // Read the input file and keep only valid users.
         try (Scanner reader = new Scanner(new File("users.txt"))) {
             while (reader.hasNextLine()) {
                 String line = reader.nextLine();
@@ -34,12 +34,12 @@ public class UsersApp {
             return;
         }
 
-        // Sort valid users by username
+        // Sort valid users by username.
         Collections.sort(users,
                 (u1, u2) ->
                         u1.getUsername().compareTo(u2.getUsername()));
 
-        // Write valid users to the output file
+        // Write valid users to the output file.
         try (PrintWriter writer = new PrintWriter("out.txt")) {
             for (User user : users) {
                 writer.println(
