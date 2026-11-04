@@ -6,16 +6,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
 
-   <children>
-      <TextField fx:id="username" layoutX="85.0" layoutY="122.0" prefHeight="25.0" prefWidth="430.0" />
+   <TextField fx:id="username" layoutX="85.0" layoutY="122.0" prefHeight="25.0" prefWidth="430.0" />
 
-      <PasswordField fx:id="password" layoutX="85.0" layoutY="238.0" prefHeight="25.0" prefWidth="430.0" />
+   <PasswordField fx:id="password" layoutX="85.0" layoutY="238.0" prefHeight="25.0" prefWidth="430.0" />
 
-      <Button layoutX="273.0" layoutY="304.0" mnemonicParsing="false" onAction="#OnHelloButtonClick" text="login" />
+   <Button layoutX="273.0" layoutY="304.0" mnemonicParsing="false" onAction="#OnHelloButtonClick" text="login" />
 
-      <Label fx:id="errorLabel" layoutX="156.0" layoutY="191.0" prefHeight="18.0" prefWidth="287.0" textFill="RED" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="156.66666666666674" />
-   </children>
+   <Label fx:id="errorLabel" layoutX="156.0" layoutY="191.0" prefHeight="18.0" prefWidth="287.0" textFill="RED" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="156.66666666666674" />
 
 </AnchorPane>
